@@ -1,0 +1,16 @@
+
+public class SaoIguais {
+
+	    public static void main(String[] args) {
+
+	       int a=3;
+	       int b=7;
+	      
+	      if (a==b){
+	        System.out.println("Sao iguais");
+	      } else{
+	        System.out.println("Sao diferentes");
+	      }
+
+	    }
+	}

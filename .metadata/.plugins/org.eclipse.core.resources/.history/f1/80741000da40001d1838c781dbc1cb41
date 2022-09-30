@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Recursao {
+
+	public static void main(String[] args) {
+
+        Scanner numero = new Scanner(System.in);
+        somatorio(3);
+        System.out.println(somatorio(5));
+
+    }
+
+    
+    static int somatorio(int numero) {
+        if (numero == 0) {
+            return 0;
+        } else {
+            return numero + somatorio(numero - 1);
+        }
+    }
+}

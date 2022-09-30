@@ -1,0 +1,25 @@
+// IMPORTANTE: Para ler os dados de entrada do usuário, utilize a classe Scanner, 
+// instanciando seu leitor da seguinte forma: "Scanner leitor = new Scanner(System.in);". 
+// Por outro lado, para imprimir suas saídas, utilize System.out.print ou System.out.println. 
+
+import java.util.*;
+
+public class BuscaSequencial {
+
+    public static void main(String[] args) {
+
+        Scanner leitor = new Scanner(System.in);
+        boolean achou = false;
+        int[] elementos = {64, 137, -16, 43, 67, 81, -90, 212, 10, 75};
+        int i = 0, item = leitor.nextInt();
+        for (; i < elementos.length; i++) {
+            if (elementos[i] == item) {
+                achou = true;
+                break;
+            }
+        }
+        if (achou) System.out.println("Achei " + item + " na posicao " + i);
+        else System.out.println("Numero " + item + " nao encontrado!");
+ 
+    }
+}

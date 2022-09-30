@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class SaoIguais {
+
+	    public static void main(String[] args) {
+
+	       Scanner teclado= new Scanner(System.in);
+	       System.out.println("Informe o valor de a:");
+	       int a=teclado.nextInt();
+	       System.out.println("Informe o valor de b:");
+	       int b=teclado.nextInt();
+	      
+	      if (a==b){
+	        System.out.println("Sao iguais");
+	      } else{
+	        System.out.println("Sao diferentes");
+	      }
+
+	    }
+	}
